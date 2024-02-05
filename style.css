@@ -5,3 +5,15 @@ header{
     margin-left: 0px;
     text-align: center;
 }
+
+:root{
+ --h1-color: purple;
+}
+
+body:has(#szín:checked){
+    --h1-color:red;
+}
+
+h1{
+    color: var(--h1-color);
+}
